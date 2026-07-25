@@ -1,0 +1,30 @@
+# Jekyll config for GitHub Pages (ian-murray.com).
+#
+# This file exists for one reason: `exclude`. GitHub Pages runs Jekyll over
+# this repo and publishes everything it doesn't exclude, so without this the
+# repo's own tooling and docs were served as part of the website —
+# ian-murray.com/README.md, /package.json and /gulpfile.js all returned 200.
+#
+# NOTE: setting `exclude` REPLACES Jekyll's built-in default list, so the
+# defaults (Gemfile, node_modules, vendor/…) are repeated here rather than
+# inherited.
+exclude:
+  # Repo docs and metadata — not part of the site.
+  - README.md
+  - LICENSE.md
+  # Build tooling. `scss/` is the source for `css/`; only the compiled CSS
+  # should ship.
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - scss/
+  # Jekyll defaults, restated because `exclude` overrides them.
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
