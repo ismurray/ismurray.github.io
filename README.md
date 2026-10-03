@@ -25,7 +25,7 @@ DNS for `ian-murray.com` is at GoDaddy and points at GitHub's Pages IPs
 |---|---|
 | `index.html` | The portfolio page itself (single page) |
 | `404.html` | Custom not-found page (GitHub Pages serves it automatically) |
-| `arcane-ascension/` | Landing page + privacy policy for the Arcane Ascension game |
+| `arcane-ascension/` | Redirect stub to [arcane-ascension.com](https://arcane-ascension.com/) (the landing page moved there) + the mirrored privacy policy |
 | `app-ads.txt` | AdMob authorized-sellers declaration — **must stay at the site root** |
 | `css/`, `js/`, `libs/`, `images/` | Compiled/vendored front-end assets that ship with the site |
 | `scss/` | Sass **source** for `css/` — not published |
